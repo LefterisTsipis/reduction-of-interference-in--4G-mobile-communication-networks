@@ -1,0 +1,24 @@
+function DataRate=DataRate_calculation(SINR)
+
+if (SINR>= 0) &&  (SINR<=1.6)
+    DataRate=149.4;
+elseif (SINR> 1.6) &&  (SINR<=3.5)
+    DataRate=199.3;
+elseif (SINR> 3.5) &&  (SINR<=5.6)
+    DataRate=239.1;
+elseif (SINR> 5.6) &&  (SINR<=7)
+    DataRate=298;
+elseif (SINR> 7)   &&  (SINR<=10.7)
+    DataRate=398.6;
+elseif (SINR> 10.7) &&  (SINR<=11.8)
+    DataRate=478.3;
+elseif (SINR> 11.8) &&  (SINR<=14.3)
+    DataRate=597.9 ;
+elseif (SINR> 14.3) &&  (SINR<=16.1)
+    DataRate=672.9 ;
+elseif (SINR> 16.1) && (SINR<=17.2)
+    DataRate=717.9 ;
+
+else DataRate=0;
+    end
+end
